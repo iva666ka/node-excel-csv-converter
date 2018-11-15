@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+csv to xlsx: <br>
+<form action="http://localhost:3000/csvtoxlsx" method="post" enctype="multipart/form-data">
+    file: <input name="file" type="file"><br>
+    delimeter:
+    <select name="delimeter">
+        <option value=";" selected>;</option>
+        <option value=",">,</option>
+    </select><br>
+    <button type="submit">send</button>
+</form>
+<br><br>
+csv to xls: <br>
+<form action="http://localhost:3000/csvtoxls" method="post" enctype="multipart/form-data">
+    file: <input name="file" type="file"><br>
+    delimeter:
+    <select name="delimeter">
+        <option value=";" selected>;</option>
+        <option value=",">,</option>
+    </select><br>
+    <button type="submit">send</button>
+</form>
+<hr>
+<br><br>
+xlsx to csv: <br>
+<form action="http://localhost:3000/xlsxtocsv" method="post" enctype="multipart/form-data">
+    file: <input name="file" type="file"><br>
+    <button type="submit">send</button>
+</form>
+<br><br>
+xls to csv: <br>
+<form action="http://localhost:3000/xlstocsv" method="post" enctype="multipart/form-data">
+    file: <input name="file" type="file"><br>
+    <button type="submit">send</button>
+</form>
+</body>
+</html>
