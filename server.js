@@ -115,7 +115,7 @@ app.post('/xlsxtocsv', uploadStorage.single('file'), (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.render('index.html')
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
