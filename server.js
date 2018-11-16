@@ -25,7 +25,7 @@ let app = express();
 app.post('/csvtoxlsx', uploadStorage.single('file'), (req, res) => {
 
   console.log(req.file);
-  let delimeter = req.body.delimeter;
+  let delimeter = req.body.delimeter || ';';
   let path = req.file.path;
   let originalname = req.file.originalname;
   console.log(path);
@@ -49,7 +49,7 @@ app.post('/csvtoxlsx', uploadStorage.single('file'), (req, res) => {
 app.post('/csvtoxls', uploadStorage.single('file'), (req, res) => {
 
   console.log(req.file);
-  let delimeter = req.body.delimeter;
+  let delimeter = req.body.delimeter || ';';
   let path = req.file.path;
   let originalname = req.file.originalname;
   console.log(path);
